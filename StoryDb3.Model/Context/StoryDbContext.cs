@@ -1,19 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using StoryDb3.Model.Configuration.Relationships;
-using StoryDb3.Model.Entities;
 using StoryDb3.Model.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace StoryDb3.Model.Context
 {
     public class StoryDbContext : DbContext
     {
-
+        // конструктор DbContext
         public StoryDbContext(DbContextOptions<StoryDbContext> options) : base(options)
         { 
 
